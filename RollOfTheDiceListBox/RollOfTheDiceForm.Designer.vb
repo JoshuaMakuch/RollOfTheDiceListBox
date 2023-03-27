@@ -28,6 +28,7 @@ Partial Class RollOfTheDiceForm
         Me.RollButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
         Me.SuspendLayout()
         '
         'DisplayListBox
@@ -70,11 +71,19 @@ Partial Class RollOfTheDiceForm
         Me.ToolTip1.SetToolTip(Me.ClearButton, "Clears the current list box")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
+        'VScrollBar1
+        '
+        Me.VScrollBar1.Location = New System.Drawing.Point(762, 10)
+        Me.VScrollBar1.Name = "VScrollBar1"
+        Me.VScrollBar1.Size = New System.Drawing.Size(26, 313)
+        Me.VScrollBar1.TabIndex = 3
+        '
         'RollOfTheDiceForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.VScrollBar1)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.RollButton)
         Me.Controls.Add(Me.ExitButton)
@@ -90,4 +99,5 @@ Partial Class RollOfTheDiceForm
     Friend WithEvents RollButton As Button
     Friend WithEvents ClearButton As Button
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents VScrollBar1 As VScrollBar
 End Class

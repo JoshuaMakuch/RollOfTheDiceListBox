@@ -27,6 +27,7 @@ Public Class RollOfTheDiceForm
         Dim rowData As String = "" 'This is used to create a row before displaying it to the list box
         Dim random As New Random() 'Creates an instance of the random class and the new generates a new seed each run through to provide pseudo randomness
 
+
         'Generates the dice roll information table formatting
         For i As Integer = 0 To 999
             total = random.Next(1, 7) + random.Next(1, 7) 'The combination of two random rolls
